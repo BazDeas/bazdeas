@@ -20,12 +20,12 @@ const projects = [
     branding: "appetize",
     url: "https://www.behance.net/gallery/69603507/Appetize-Restaurant-Point-of-Service-App"
   },
-  {
-    name: "Lab",
-    description: "Self-initiated projects for research and development",
-    branding: "lab",
-    url: "https://www.behance.net/gallery/69603507/Appetize-Restaurant-Point-of-Service-App"
-  },
+  // {
+  //   name: "Lab",
+  //   description: "Self-initiated projects for research and development",
+  //   branding: "lab",
+  //   url: "https://www.behance.net/gallery/69603507/Appetize-Restaurant-Point-of-Service-App"
+  // },
 ]
 
 const Styling = styled.div`

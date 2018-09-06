@@ -70,6 +70,7 @@ const Styling = styled.div`
     color: #636363;
     letter-spacing: 0.22px;
     line-height: 1;
+    text-decoration: none;
   }
 
   .social {
