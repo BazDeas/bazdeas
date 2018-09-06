@@ -74,7 +74,7 @@ const Styling = styled.div`
         }
         .title {
           .description {
-            color: rgba(0, 0, 0, 0.75);
+            color: rgba(0, 0, 0, 0.62);
           }
         }
       }
