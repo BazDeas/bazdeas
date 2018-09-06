@@ -74,10 +74,36 @@ const Styling = styled.div`
 
   .social {
     list-style-type: none;
+    display: flex;
+    transform: translateX(-9px);
+
     .social-item {
-      .icon {
-        width: 48px;
-        fill: black;
+      margin: 0 1rem 0 0;
+      a {
+        text-decoration: none;
+        .icon {
+          display: block;
+          width: 40px;
+          fill: rgba(0, 0, 0, 0.5);
+          transition: all 0.3s ease-out;
+        }
+        .name {
+          transform: translateY(-4px);
+          display: block;
+          font-weight: 400;
+          font-size: 10px;
+          color: #B9B9B9;
+          text-align: center;
+          transition: all 0.3s ease-out;
+        }
+        &:hover {
+          .icon {
+            fill: rgba(0, 0, 0, 0.9);
+          }
+          .name {
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
       }
     }
   }
@@ -108,6 +134,19 @@ const Styling = styled.div`
         color: white;
       }
     }
+    .social {
+      .social-item {
+        margin: 0 1.5rem 0 0;
+        a {
+          .icon {
+            width: 100px;
+          }
+          .name {
+            font-size: 17px;
+          }
+        }
+      }
+    }
   }
 `
 
@@ -121,8 +160,10 @@ export default () => {
         <ul className="social">
           {social.map(({name, icon, link}, i) =>
             <li key={i} className="social-item">
-              <Icon className="icon" icon={icon} />
-              <a className="name" href={link}>{name}</a>
+              <a href={link}>
+                <Icon className="icon" icon={icon} />
+                <span className="name">{name}</span>
+              </a>
             </li>
           )}
         </ul>
