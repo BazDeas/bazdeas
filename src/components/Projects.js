@@ -7,7 +7,7 @@ import Branding from '../assets/branding/Branding'
 const projects = [
   {
     name: "PayBear",
-    description: "Improving the cryptocurrency payment experience",
+    description: "Improving the cryptocurrency experience",
     branding: "paybear",
     url: "https://www.behance.net/gallery/69565183/PayBear-Crypto-Payment-Processor"
   },
@@ -27,7 +27,7 @@ const projects = [
 
 const Container = styled.div`
 
-  padding: 2rem;
+  padding: 0 2rem;
 
   .project {
     display: flex;
@@ -65,30 +65,22 @@ const Container = styled.div`
 
     .project {
 
-      display: flex;
-      list-style-type: none;
-      align-items: center;
-
       .branding {
         width: 128px;
         transform: translatex(-32px);
       }
       .title {
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 1rem;
         .name {
           display: inline;
           font-weight: 700;
           font-size: 40px;
-          color: #181818;
-          letter-spacing: -0.8px;
         }
         .description {
           display: inline;
           margin: 0 0 0 1.5rem;
           font-weight: 200;
           font-size: 32px;
-          color: #A2A2A2;
-          letter-spacing: 0.15px;
         }
       }
     }

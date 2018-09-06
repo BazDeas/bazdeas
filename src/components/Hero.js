@@ -49,12 +49,13 @@ const Container = styled.div`
     height: 6px;
     background: #F2F2F2;
     display: block;
-    margin: 3rem 0;
+    margin: 4rem 0 0rem;
   }
 
 
   @media ${bp.large} {
     width: 1280px; margin: 0 auto;
+    padding: 0;
     .title {
       transform: translateX(-16px);
       .first-word, .second-word {
