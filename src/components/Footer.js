@@ -11,7 +11,28 @@ const social = [
     name: "Medium",
     icon: "medium",
     link: "https://medium.com/@bazdeas"
-  }
+  },
+  {
+    name: "Dribbble",
+    icon: "dribbble",
+    link: "https://dribbble.com/BazDeas"
+  },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/bazdeas/"
+  },
+  {
+    name: "Twitter",
+    icon: "twitter",
+    link: "https://twitter.com/BazDeas"
+  },
+  {
+    name: "Behance",
+    icon: "behance",
+    link: "https://www.behance.net/BazDeas"
+  },
+
 ]
 
 const Styling = styled.div`
