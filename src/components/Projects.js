@@ -27,13 +27,72 @@ const projects = [
 
 const Container = styled.div`
 
+  padding: 2rem;
+
   .project {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    align-items: center;
+    margin: 1.5rem 0;
+
     .branding {
-      width: 64px;
+      width: 80px;
+      transform: translatex(-20px);
     }
+
+    .title {
+      width: 70%;
+      .name {
+        font-weight: 700;
+        font-size: 20px;
+        color: #181818;
+        letter-spacing: -0.8px;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 13px;
+        color: #A2A2A2;
+        letter-spacing: 0.15px;
+      }
+    }
+
   }
 
   @media ${bp.large} {
+
+    width: 1280px; margin: 0 auto;
+
+    .project {
+
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+
+      .branding {
+        width: 128px;
+        transform: translatex(-32px);
+      }
+      .title {
+        margin: 0 0 0 2rem;
+        .name {
+          display: inline;
+          font-weight: 700;
+          font-size: 40px;
+          color: #181818;
+          letter-spacing: -0.8px;
+        }
+        .description {
+          display: inline;
+          margin: 0 0 0 1.5rem;
+          font-weight: 200;
+          font-size: 32px;
+          color: #A2A2A2;
+          letter-spacing: 0.15px;
+        }
+      }
+    }
+
   }
 
 `
@@ -45,8 +104,10 @@ export default () => {
         {projects.map(({ name, description, branding, url }, i) =>
           <li key={i} className="project">
             <Branding className="branding" logo={branding} />
-            <h4>{name}</h4>
-            <h5>{description}</h5>
+            <div className="title">
+              <h4 className="name">{name}</h4>
+              <h5 className="description">{description}</h5>
+            </div>
           </li>
         )}
       </ul>
