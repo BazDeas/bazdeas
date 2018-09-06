@@ -9,7 +9,7 @@ const Container = styled.div`
   align-items: center;
 
   .branding {
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: -0.5px;
     font-weight: 500;
     a {
@@ -42,7 +42,7 @@ const Container = styled.div`
     padding: 4rem 0;
 
     .branding {
-      font-size: 36px;
+      font-size: 32px;
     }
 
     .navigation {
