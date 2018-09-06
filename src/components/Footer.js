@@ -158,7 +158,7 @@ export default () => {
       <Styling>
         <h4 className="title">Let's Make Great Things Together</h4>
         <h5 className="subtitle">I'd love to hear about your project at <a href="mailto:hello@bazdeas.com" className="email-address">hello@bazdeas.com</a></h5>
-        <a className="send-message-button">Send Message</a>
+        <a className="send-message-button" href="mailto:hello@bazdeas.com">Send Message</a>
         <ul className="social">
           {social.map(({name, icon, link}, i) =>
             <li key={i} className="social-item">
