@@ -4,7 +4,6 @@ import bp from '../brand/breakpoints'
 import colors from '../brand/colors'
 
 const Container = styled.div`
-  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
