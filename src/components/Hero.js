@@ -41,6 +41,25 @@ const Styling = styled.div`
     }
   }
 
+  @media ${bp.medium} {
+    .title {
+      transform: translateX(-8px);
+      .first-word, .second-word {
+        font-size: 100px;
+        letter-spacing: -4px;
+      }
+      .third-word {
+        font-size: 150px;
+        letter-spacing: -11px;
+      }
+    }
+    .subtitle {
+      margin: 1rem 0 0 0;
+      font-size: 24px;
+      max-width: 50%;
+    }
+  }
+
   @media ${bp.large} {
     .title {
       transform: translateX(-16px);

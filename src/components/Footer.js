@@ -111,6 +111,49 @@ const Styling = styled.div`
   }
 
 
+  @media ${bp.medium} {
+    margin: 3rem 0;
+    .title {
+      font-size: 72px;
+      letter-spacing: -3.53px;
+      line-height: 1;
+      width: 50%;
+    }
+    .subtitle {
+      width: 50%;
+      margin: 2rem 0 0 0;
+      font-weight: 200;
+      font-size: 28px;
+      letter-spacing: -0.35px;
+      line-height: 1.3;
+    }
+    .send-message-button {
+      font-size: 22px;
+      padding: 1.2rem 1.5rem 1.3rem; margin: 3rem 0;
+      border-width: 1.5px;
+      transition: all 0.1s ease-out;
+      &:hover {
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+      }
+    }
+    .social {
+      margin: 0 0 6rem 0;
+      .social-item {
+        margin: 0 1.5rem 0 0;
+        a {
+          .icon {
+            width: 60px;
+          }
+          .name {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+
   @media ${bp.large} {
     margin: 3rem 0;
     .title {

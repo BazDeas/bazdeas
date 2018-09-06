@@ -4,7 +4,7 @@ import bp from '../brand/breakpoints'
 
 const Container = styled.div`
 
-  margin: 2rem;
+  margin: 2.5rem;
 
 
   ${props => props.separator &&
@@ -18,8 +18,12 @@ const Container = styled.div`
   }`
   }
 
+  @media ${bp.medium} {
+    padding: 0 3rem;
+  }
+
   @media ${bp.large} {
-    width: 1280px; margin: 0 auto;
+    max-width: 1280px; margin: 0 auto;
     padding: 0;
     &::after {
       width: 30%;

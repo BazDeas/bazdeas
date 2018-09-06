@@ -84,6 +84,40 @@ const Styling = styled.div`
 
   }
 
+  @media ${bp.medium} {
+    .project {
+      margin: 2rem 0;
+      a {
+        .branding {
+          width: 100px;
+          transform: translatex(-32px);
+        }
+        .title {
+          margin: 0;
+          width: 100%;
+          .name {
+            display: inline;
+            font-weight: 700;
+            font-size: 32px;
+          }
+          .description {
+            display: inline;
+            margin: 0 0 0 1.5rem;
+            font-weight: 200;
+            font-size: 20px;
+          }
+        }
+        .back-icon {
+          width: 36px;
+          transform: translate(12px, 13px);
+        }
+      }
+
+    }
+
+  }
+
+
   @media ${bp.large} {
     .project {
       margin: 2rem 0;
