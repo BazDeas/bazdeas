@@ -104,10 +104,10 @@ const Styling = styled.div`
         }
         &:hover {
           .icon {
-            fill: rgba(0, 0, 0, 0.9);
+            fill: rgba(255, 255, 255, 1);
           }
           .name {
-            color: rgba(0, 0, 0, 0.7);
+            color: rgba(255, 255, 255, 0.7);
           }
         }
       }

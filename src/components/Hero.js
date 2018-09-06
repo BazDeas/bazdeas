@@ -88,7 +88,7 @@ const Styling = styled.div`
 
 export default () => {
   return(
-    <Container separator={true}>
+    <Container separator={false}>
       <Styling>
         <Header />
         <h1 className="title">

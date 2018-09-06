@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import bp from '../brand/breakpoints'
 
-const margin = 2.5
+const margin = 2
 
 const OuterContainer = styled.div`
   background: ${props => props.dark ? 'rgba(0, 0, 0, 0.90)' : 'white'};
@@ -11,7 +11,7 @@ const OuterContainer = styled.div`
 
 const InnerContainer = styled.div`
 
-  ${'' /* margin: ${props => props.fullWidth ? ` 0` : `${margin}rem`}; */}
+  padding: ${margin}rem;
 
   ${props => props.separator &&
   `&::after {
@@ -30,7 +30,6 @@ const InnerContainer = styled.div`
 
   @media ${bp.large} {
     width: 1280px; margin: 0 auto;
-    padding: 0;
     &::after {
       width: 30%;
       height: 10px;
@@ -42,8 +41,8 @@ const InnerContainer = styled.div`
 
 export default ({children, separator, dark, fullWidth}) => {
   return(
-    <OuterContainer dark={dark} >
-      <InnerContainer separator={separator} fullWidth={fullWidth}>
+    <OuterContainer dark={dark} fullWidth={fullWidth}>
+      <InnerContainer separator={separator}>
         {children}
       </InnerContainer>
     </OuterContainer>
