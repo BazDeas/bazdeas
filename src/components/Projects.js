@@ -4,6 +4,8 @@ import bp from '../brand/breakpoints'
 import colors from '../brand/colors'
 import Branding from '../assets/branding/Branding'
 
+import Container from './Container'
+
 const projects = [
   {
     name: "PayBear",
@@ -25,9 +27,7 @@ const projects = [
   },
 ]
 
-const Container = styled.div`
-
-  padding: 0 2rem;
+const Styling = styled.div`
 
   .project {
     display: flex;
@@ -60,9 +60,6 @@ const Container = styled.div`
   }
 
   @media ${bp.large} {
-
-    width: 1280px; margin: 0 auto;
-
     .project {
 
       .branding {
@@ -92,17 +89,19 @@ const Container = styled.div`
 export default () => {
   return(
     <Container>
-      <ul className="projects">
-        {projects.map(({ name, description, branding, url }, i) =>
-          <li key={i} className="project">
-            <Branding className="branding" logo={branding} />
-            <div className="title">
-              <h4 className="name">{name}</h4>
-              <h5 className="description">{description}</h5>
-            </div>
-          </li>
-        )}
-      </ul>
+      <Styling>
+        <ul className="projects">
+          {projects.map(({ name, description, branding, url }, i) =>
+            <li key={i} className="project">
+              <Branding className="branding" logo={branding} />
+              <div className="title">
+                <h4 className="name">{name}</h4>
+                <h5 className="description">{description}</h5>
+              </div>
+            </li>
+          )}
+        </ul>
+      </Styling>
     </Container>
   )
 }

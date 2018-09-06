@@ -4,11 +4,9 @@ import bp from '../brand/breakpoints'
 import colors from '../brand/colors'
 
 import Header from './Header'
+import Container from './Container'
 
-const Container = styled.div`
-
-  padding: 2rem;
-
+const Styling = styled.div`
   .title {
     transform: translateX(-4px);
     line-height: 0.9;
@@ -43,19 +41,7 @@ const Container = styled.div`
     }
   }
 
-  &::after {
-    content: "";
-    width: 50%;
-    height: 6px;
-    background: #F2F2F2;
-    display: block;
-    margin: 4rem 0 0rem;
-  }
-
-
   @media ${bp.large} {
-    width: 1280px; margin: 0 auto;
-    padding: 0;
     .title {
       transform: translateX(-16px);
       .first-word, .second-word {
@@ -75,11 +61,6 @@ const Container = styled.div`
       line-height: 1.6;
       letter-spacing: 0.1px;
     }
-    &::after {
-      width: 30%;
-      height: 10px;
-      margin: 6rem 0;
-    }
   }
 
 
@@ -89,13 +70,15 @@ const Container = styled.div`
 export default () => {
   return(
     <Container>
-      <Header />
-      <h1 className="title">
-        <span className="first-word">Digital</span>
-        <span className="second-word">Product</span>
-        <span className="third-word">Designer</span>
-      </h1>
-      <h3 className="subtitle">I work with startups and entrepreneurs on design and strategy. Need help on a project? <a href="/" className="contact-button">Let's talk</a></h3>
+      <Styling>
+        <Header />
+        <h1 className="title">
+          <span className="first-word">Digital</span>
+          <span className="second-word">Product</span>
+          <span className="third-word">Designer</span>
+        </h1>
+        <h3 className="subtitle">I work with startups and entrepreneurs on design and strategy. Need help on a project? <a href="/" className="contact-button">Let's talk</a></h3>
+      </Styling>
     </Container>
   )
 }
