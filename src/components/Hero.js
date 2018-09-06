@@ -10,6 +10,7 @@ const Container = styled.div`
   padding: 2rem;
 
   .title {
+    transform: translateX(-4px);
     line-height: 0.9;
     padding: 3rem 0;
     .first-word, .second-word {
@@ -46,6 +47,7 @@ const Container = styled.div`
   @media ${bp.large} {
     width: 1280px; margin: 0 auto;
     .title {
+      transform: translateX(-16px);
       .first-word, .second-word {
         font-size: 164px;
         letter-spacing: -4px;
