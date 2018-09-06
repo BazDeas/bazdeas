@@ -43,6 +43,15 @@ const Container = styled.div`
     }
   }
 
+  &::after {
+    content: "";
+    width: 50%;
+    height: 6px;
+    background: #F2F2F2;
+    display: block;
+    margin: 3rem 0;
+  }
+
 
   @media ${bp.large} {
     width: 1280px; margin: 0 auto;
@@ -65,7 +74,15 @@ const Container = styled.div`
       line-height: 1.6;
       letter-spacing: 0.1px;
     }
+    &::after {
+      width: 30%;
+      height: 10px;
+      margin: 6rem 0;
+    }
   }
+
+
+
 `
 
 export default () => {
