@@ -73,6 +73,7 @@ const Styling = styled.div`
   }
 
   .social {
+    margin: 0 0 2rem 0;
     list-style-type: none;
     display: flex;
     transform: translateX(-9px);
@@ -83,7 +84,7 @@ const Styling = styled.div`
         text-decoration: none;
         .icon {
           display: block;
-          width: 40px;
+          width: 44px;
           fill: rgba(0, 0, 0, 0.5);
           transition: all 0.3s ease-out;
         }
@@ -135,6 +136,7 @@ const Styling = styled.div`
       }
     }
     .social {
+      margin: 0 0 6rem 0;
       .social-item {
         margin: 0 1.5rem 0 0;
         a {
@@ -155,7 +157,7 @@ export default () => {
     <Container separator={false}>
       <Styling>
         <h4 className="title">Let's Make Great Things Together</h4>
-        <h5 className="subtitle">I'd love to hear about your project at <a href="" className="email-address">hello@bazdeas.com</a></h5>
+        <h5 className="subtitle">I'd love to hear about your project at <a href="mailto:hello@bazdeas.com" className="email-address">hello@bazdeas.com</a></h5>
         <a className="send-message-button">Send Message</a>
         <ul className="social">
           {social.map(({name, icon, link}, i) =>
