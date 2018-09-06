@@ -6,13 +6,16 @@ const Container = styled.div`
 
   margin: 2rem;
 
-  &::after {
+
+  ${props => props.separator &&
+  `&::after {
     content: "";
     width: 50%;
     height: 6px;
     background: #F2F2F2;
     display: block;
     margin: 3rem 0;
+  }`
   }
 
   @media ${bp.large} {
@@ -27,9 +30,9 @@ const Container = styled.div`
 
 `
 
-export default ({children}) => {
+export default ({children, separator}) => {
   return(
-    <Container>
+    <Container separator={separator}>
       {children}
     </Container>
   )

@@ -88,7 +88,7 @@ const Styling = styled.div`
 
 export default () => {
   return(
-    <Container>
+    <Container separator={true}>
       <Styling>
         <ul className="projects">
           {projects.map(({ name, description, branding, url }, i) =>

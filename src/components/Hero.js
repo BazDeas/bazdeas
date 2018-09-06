@@ -69,7 +69,7 @@ const Styling = styled.div`
 
 export default () => {
   return(
-    <Container>
+    <Container separator={true}>
       <Styling>
         <Header />
         <h1 className="title">
