@@ -27,6 +27,21 @@ const Container = styled.div`
     }
   }
 
+  .subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    color: #606060;
+    letter-spacing: -0.1px;
+    line-height: 1.4;
+    .contact-button {
+      color: #151515;
+      font-weight: 600;
+      &:hover {
+        color: ${colors.primary};
+      }
+    }
+  }
+
 
   @media ${bp.large} {
     width: 1280px; margin: 0 auto;
@@ -38,6 +53,14 @@ const Container = styled.div`
       .third-word {
         font-size: 200px;
         letter-spacing: -13px;
+      }
+    }
+    .subtitle {
+      font-size: 27px;
+      font-weight: 100;
+      width: 50%;
+      .contact-button {
+        letter-spacing: 0.1px;
       }
     }
   }
@@ -52,7 +75,7 @@ export default () => {
         <span className="second-word">Product</span>
         <span className="third-word">Designer</span>
       </h1>
-      
+      <h3 className="subtitle">I work with startups and entrepreneurs on design and strategy. Need help on a project? <a href="/" className="contact-button">Let's talk</a></h3>
     </Container>
   )
 }
