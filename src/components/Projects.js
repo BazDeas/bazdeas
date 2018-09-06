@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import bp from '../brand/breakpoints'
 import colors from '../brand/colors'
 import Branding from '../assets/branding/Branding'
+import Icon from '../assets/icons/Icon'
 
 import Container from './Container'
 
@@ -41,7 +42,6 @@ const Styling = styled.div`
         width: 80px;
         transform: translatex(-20px);
       }
-
       .title {
         width: 70%;
         .name {
@@ -55,11 +55,21 @@ const Styling = styled.div`
           font-size: 13px;
           color: #A2A2A2;
           letter-spacing: 0.15px;
+          line-height: 1.4;
         }
       }
+      .back-icon {
+        display: inline;
+        line-height: 1;
+        width: 28px;
+        fill: rgba(0, 0, 0, 0.15);
+        position: absolute;
+        transform: translate(2px, -3px);
+        transition: fill 0.3s ease-out;
+      }
       &:hover {
-        .name {
-          color: ${colors.primary};
+        .back-icon {
+          fill: rgba(0, 0, 0, 0.8);
         }
       }
     }
@@ -78,6 +88,7 @@ const Styling = styled.div`
         }
         .title {
           margin: 0 0 0 1rem;
+          width: 100%;
           .name {
             display: inline;
             font-weight: 700;
@@ -87,8 +98,12 @@ const Styling = styled.div`
             display: inline;
             margin: 0 0 0 1.5rem;
             font-weight: 200;
-            font-size: 32px;
+            font-size: 30px;
           }
+        }
+        .back-icon {
+          width: 58px;
+          transform: translate(12px, 8px);
         }
       }
 
@@ -109,8 +124,12 @@ export default () => {
                 <Branding className="branding" logo={branding} />
                 <div className="title">
                   <h4 className="name">{name}</h4>
-                  <h5 className="description">{description}</h5>
+                  <h5 className="description">{description}
+                    <Icon className="back-icon" icon="back" />
+                  </h5>
+
                 </div>
+
               </a>
             </li>
           )}

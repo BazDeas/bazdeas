@@ -5,6 +5,7 @@ import Dribbble from './Dribbble'
 import Instagram from './Instagram'
 import Twitter from './Twitter'
 import Behance from './Behance'
+import Back from './Back'
 
 const icons = {
   medium: <Medium />,
@@ -12,6 +13,7 @@ const icons = {
   instagram: <Instagram />,
   twitter: <Twitter />,
   behance: <Behance />,
+  back: <Back />,
 }
 
 export default (props) => {
