@@ -40,7 +40,7 @@ const Styling = styled.div`
   .title {
     font-weight: 700;
     font-size: 43px;
-    color: #131313;
+    color: white;
     letter-spacing: -1.72px;
     line-height: 1.1;
   }
@@ -49,11 +49,11 @@ const Styling = styled.div`
     margin: 1rem 0 0 0;
     font-weight: 300;
     font-size: 18px;
-    color: #464646;
+    color: rgba(255, 255, 255, 0.6);
     letter-spacing: -0.22px;
     line-height: 26px;
     .email-address {
-      color: #464646;
+      color: white;
       &:hover {
         color: ${colors.primary};
       }
@@ -63,7 +63,7 @@ const Styling = styled.div`
   .send-message-button {
     display: inline-block;
     padding: 1rem 1.25rem 1.1rem; margin: 2rem 0;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     font-weight: 500;
     font-size: 18px;
@@ -71,6 +71,10 @@ const Styling = styled.div`
     letter-spacing: 0.22px;
     line-height: 1;
     text-decoration: none;
+    &:hover {
+      background: white;
+      color: rgba(0, 0, 0, 0.9);
+    }
   }
 
   .social {
@@ -86,7 +90,7 @@ const Styling = styled.div`
         .icon {
           display: block;
           width: 44px;
-          fill: rgba(0, 0, 0, 0.5);
+          fill: rgba(255, 255, 255, 0.3);
           transition: all 0.3s ease-out;
         }
         .name {
@@ -94,7 +98,7 @@ const Styling = styled.div`
           display: block;
           font-weight: 400;
           font-size: 10px;
-          color: #B9B9B9;
+          color: rgba(255, 255, 255, 0.3);
           text-align: center;
           transition: all 0.3s ease-out;
         }
@@ -132,10 +136,7 @@ const Styling = styled.div`
       padding: 1.2rem 1.5rem 1.3rem; margin: 3rem 0;
       border-width: 1.5px;
       transition: all 0.1s ease-out;
-      &:hover {
-        background: rgba(0, 0, 0, 0.9);
-        color: white;
-      }
+
     }
     .social {
       margin: 0 0 6rem 0;
@@ -174,10 +175,6 @@ const Styling = styled.div`
       padding: 1.5rem 2rem 1.8rem; margin: 5rem 0;
       border-width: 1.5px;
       transition: all 0.1s ease-out;
-      &:hover {
-        background: rgba(0, 0, 0, 0.9);
-        color: white;
-      }
     }
     .social {
       margin: 0 0 6rem 0;
@@ -198,7 +195,7 @@ const Styling = styled.div`
 
 export default () => {
   return(
-    <Container separator={false}>
+    <Container separator={false} dark={true} fullWidth={true}>
       <Styling>
         <h4 className="title">Let's Make Great Things Together</h4>
         <h5 className="subtitle">I'd love to hear about your project at <a href="mailto:hello@bazdeas.com" className="email-address">hello@bazdeas.com</a></h5>

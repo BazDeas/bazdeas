@@ -2,10 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import bp from '../brand/breakpoints'
 
-const Container = styled.div`
+const margin = 2.5
 
-  margin: 2.5rem;
+const OuterContainer = styled.div`
+  background: ${props => props.dark ? 'rgba(0, 0, 0, 0.90)' : 'white'};
 
+`
+
+const InnerContainer = styled.div`
+
+  ${'' /* margin: ${props => props.fullWidth ? ` 0` : `${margin}rem`}; */}
 
   ${props => props.separator &&
   `&::after {
@@ -34,10 +40,12 @@ const Container = styled.div`
 
 `
 
-export default ({children, separator}) => {
+export default ({children, separator, dark, fullWidth}) => {
   return(
-    <Container separator={separator}>
-      {children}
-    </Container>
+    <OuterContainer dark={dark} >
+      <InnerContainer separator={separator} fullWidth={fullWidth}>
+        {children}
+      </InnerContainer>
+    </OuterContainer>
   )
 }
