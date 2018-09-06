@@ -14,13 +14,13 @@ const projects = [
   {
     name: "Appetize",
     description: "Reimaging the restaurant experience",
-    branding: "paybear",
+    branding: "appetize",
     url: "https://www.behance.net/gallery/69603507/Appetize-Restaurant-Point-of-Service-App"
   },
   {
     name: "Lab",
     description: "Self-initiated projects for research and development",
-    branding: "paybear",
+    branding: "lab",
     url: "https://www.behance.net/gallery/69603507/Appetize-Restaurant-Point-of-Service-App"
   },
 ]

@@ -1,9 +1,13 @@
 import React from 'react'
 
 import PayBear from './PayBear'
+import Lab from './Lab'
+import Appetize from './Appetize'
 
 const logos = {
   paybear: <PayBear />,
+  lab: <Lab />,
+  appetize: <Appetize />,
 }
 
 export default (props) => {
