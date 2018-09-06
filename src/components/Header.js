@@ -11,7 +11,7 @@ const Container = styled.div`
   .branding {
     font-size: 28px;
     letter-spacing: -0.5px;
-    font-weight: 700;
+    font-weight: 500;
     a {
       color: #434343;
       text-decoration: none;

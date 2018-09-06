@@ -14,7 +14,7 @@ const Container = styled.div`
     line-height: 0.9;
     padding: 3rem 0;
     .first-word, .second-word {
-      font-weight: 300;
+      font-weight: 200;
       font-size: 64px;
       display: block;
       color: #333333;
@@ -58,12 +58,12 @@ const Container = styled.div`
       }
     }
     .subtitle {
+      margin: 3rem 0 0 0;
       font-size: 27px;
-      font-weight: 100;
+      font-weight: 200;
       width: 50%;
-      .contact-button {
-        letter-spacing: 0.1px;
-      }
+      line-height: 1.6;
+      letter-spacing: 0.1px;
     }
   }
 `
