@@ -36,7 +36,7 @@ const Container = styled.div`
     line-height: 1.4;
     .contact-button {
       color: #151515;
-      font-weight: 600;
+      font-weight: 500;
       &:hover {
         color: ${colors.primary};
       }
