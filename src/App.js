@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
         <Hero />
         <Projects />
+        <Footer />
       </div>
     );
   }
