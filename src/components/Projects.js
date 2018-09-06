@@ -56,6 +56,7 @@ const Styling = styled.div`
           color: #A2A2A2;
           letter-spacing: 0.15px;
           line-height: 1.4;
+          transition: color 0.3s ease-out;
         }
       }
       .back-icon {
@@ -70,6 +71,11 @@ const Styling = styled.div`
       &:hover {
         .back-icon {
           fill: rgba(0, 0, 0, 0.8);
+        }
+        .title {
+          .description {
+            color: rgba(0, 0, 0, 0.75);
+          }
         }
       }
     }
