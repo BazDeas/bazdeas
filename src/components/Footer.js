@@ -38,7 +38,7 @@ const social = [
 const Styling = styled.div`
 
   .title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 43px;
     color: #131313;
     letter-spacing: -1.72px;
@@ -117,10 +117,10 @@ const Styling = styled.div`
       font-size: 72px;
       letter-spacing: -3.53px;
       line-height: 1;
-      width: 50%;
+      width: 80%;
     }
     .subtitle {
-      width: 50%;
+      width: 80%;
       margin: 2rem 0 0 0;
       font-weight: 200;
       font-size: 28px;

@@ -35,6 +35,24 @@ const Container = styled.div`
     }
   }
 
+  @media ${bp.medium} {
+
+    width: 720px;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    .branding {
+      font-size: 22px;
+    }
+
+    .navigation {
+      a {
+      font-size: 18px;
+      }
+    }
+
+  }
+
   @media ${bp.large} {
 
     width: 1280px;

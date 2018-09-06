@@ -56,7 +56,7 @@ const Styling = styled.div`
     .subtitle {
       margin: 1rem 0 0 0;
       font-size: 24px;
-      max-width: 50%;
+      width: 80%;
     }
   }
 

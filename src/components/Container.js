@@ -19,11 +19,11 @@ const Container = styled.div`
   }
 
   @media ${bp.medium} {
-    padding: 0 3rem;
+    width: 720px; margin: 0 auto;
   }
 
   @media ${bp.large} {
-    max-width: 1280px; margin: 0 auto;
+    width: 1280px; margin: 0 auto;
     padding: 0;
     &::after {
       width: 30%;
