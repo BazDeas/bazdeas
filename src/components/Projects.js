@@ -61,7 +61,7 @@ const Styling = styled.div`
 
   @media ${bp.large} {
     .project {
-
+      margin: 2rem 0;
       .branding {
         width: 128px;
         transform: translatex(-32px);
