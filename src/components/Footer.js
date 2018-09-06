@@ -2,8 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import bp from '../brand/breakpoints'
 import colors from '../brand/colors'
+import Icon from '../assets/icons/Icon'
 
 import Container from './Container'
+
+const social = [
+  {
+    name: "Medium",
+    icon: "medium",
+    link: "https://medium.com/@bazdeas"
+  }
+]
 
 const Styling = styled.div`
 
@@ -42,6 +51,16 @@ const Styling = styled.div`
     line-height: 1;
   }
 
+  .social {
+    list-style-type: none;
+    .social-item {
+      .icon {
+        width: 48px;
+        fill: black;
+      }
+    }
+  }
+
 
   @media ${bp.large} {
     margin: 3rem 0;
@@ -78,6 +97,14 @@ export default () => {
         <h4 className="title">Let's Make Great Things Together</h4>
         <h5 className="subtitle">I'd love to hear about your project at <a href="" className="email-address">hello@bazdeas.com</a></h5>
         <a className="send-message-button">Send Message</a>
+        <ul className="social">
+          {social.map(({name, icon, link}, i) =>
+            <li key={i} className="social-item">
+              <Icon className="icon" icon={icon} />
+              <a className="name" href={link}>{name}</a>
+            </li>
+          )}
+        </ul>
       </Styling>
     </Container>
   )
